@@ -42,6 +42,8 @@ In the STOPS_AT relation both the attributes are foreign keys. It is a M:N binar
 
 REACHES
 In the REACHES relation there are two foreign keys – train_no and station_no. It is a 1:N binary relationship between Train and Station where the participation of Train is total and Station is partial.
+
+
 FD and Normalization
 
 In the following relations there is a single functional dependency of the keys in the relation having single primary key. Only for the relation Train there is more than one such functional dependency which is discussed as follows:
