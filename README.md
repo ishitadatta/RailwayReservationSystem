@@ -46,7 +46,7 @@ REACHES
 In the REACHES relation there are two foreign keys – train_no and station_no. It is a 1:N binary relationship between Train and Station where the participation of Train is total and Station is partial.
 
 ### ER diagram
-![ER diagram](/images/ER)
+![ER diagram](/images/ER.png)
 
 
 ### FD and Normalization
