@@ -1,14 +1,16 @@
 # RailwayReservationSystem
 A database management system using MySQL
 
+### Abstract
  The Railway Reservation System facilitates the passengers to enquire about the trains available on the basis of source and destination, booking and cancellation of tickets, enquire about the status of the booked ticket, etc. The aim of the project is to design and develop a database maintaining the records of different trains, train status and passengers.     
 This project contains an entity relationship model diagram based on a railway reservation system. There is also design of the database schema between different entities and their relationships. Notations used for the relationship constraints are using cardinality ratio and participation constraints. The triggers used in this project are created for: 
-• Inserting (before and after) number of seats constraint in a Train Coach
-• Updating (before and after) the train number constraint of the Ticket entity
-• Deleting (before and after) the ticket number constraint as a separate audit trail      
+* Inserting (before and after) number of seats constraint in a Train Coach
+* Updating (before and after) the train number constraint of the Ticket entity
+* Deleting (before and after) the ticket number constraint as a separate audit trail      
+
 Some of the queries made in this project involve finding out the minimum, maximum and average cost of the train fares of different train classes, some nested queries between the booking and cancellation of tickets and their correlation with the User and Passenger entities and join operation performed on the Ticket, Train and Passenger entities.This database for a Railway Reservation System provides us with all the details and different dependencies between the various entities in a Railway system with regard to trains, tickets, passengers, train stations, train date and timings, ticket fares, booking and cancellations.
 
-Choice Of Keys
+###Choice Of Keys
 
 USER 
 In the USER relation there is only one primary key that is the user_id. The address is a composite key. There are no composite primary keys nor does any of the entities have more than one key so there are no candidate keys. The entire relation is by default a superkey. 
@@ -44,7 +46,7 @@ REACHES
 In the REACHES relation there are two foreign keys – train_no and station_no. It is a 1:N binary relationship between Train and Station where the participation of Train is total and Station is partial.
 
 
-FD and Normalization
+###FD and Normalization
 
 In the following relations there is a single functional dependency of the keys in the relation having single primary key. Only for the relation Train there is more than one such functional dependency which is discussed as follows:
 
